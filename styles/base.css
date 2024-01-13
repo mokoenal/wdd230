@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap");
+
+body {
+    font-family: "Cantarell", Arial, Helvetica, sans-serif;
+    color: #004e98;
+}
+
+header {
+    display: grid;
+    margin: auto;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+
+.header-picture {
+    width: 150px;
+    margin-right: 10PX;
+    box-shadow: 0 0 10px black;
+}
+
+h1 {
+    font-family: "Permanent Marker", "Trebuchet MS", "Lucida Sans Unicode",
+        "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: darkred;
+    margin: auto;
+    max-width: 800px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: #e76f51;
+}
+
+nav ul {
+    display: grid;
+    margin: auto;
+    max-width: 800px;
+    place-items: center;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+
+main {
+    font-family: "Cantarell", Arial, Helvetica, sans-serif;
+    color: #004e98;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.card {
+    background-color: #ebebeb;
+    border: #004e98;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.card-grid {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-grid li {
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #004e98;
+    background-color: #c0c0c0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+footer {
+    background-color: #c0c0c0;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*mobile view*/
+@media only screen and (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr;
+
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindiwe Mokoena - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development course assignment portal by Lindiwe Mokoena to add all work related to this topic." />
+    <meta name="author" content="Lindiwe Mokoena" />
+    <link href="styles/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <img class="header-picture" src="images/image.jpg" alt="Lindiwe Mokoena">
+        <h1>Lindiwe Mokoena</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="main-grid-title">
+            <h2>WDD 230: Web Frontend Development</h2>
+            <hr class="solid">
+        </div>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ol class="card-grid">
+                <li><a href="#">01: Holy Layout | JS Pen</a></li>
+                <li><a href="#">02: Media Query | Design Principles Document</a></li>
+            </ol>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <p>Toloria, Madagascar</p>
+            <p>Weather: 76 degrees F - Sunshine</p>
+            <p><span class="label">Page Visits: </span><span class="visits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="yearDate"></span> </p>
+        <p>Lindiwe Mokoena | Boksburg</p>
+        <p>South Africa</p>
+        <div id="lastModified"></div>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
