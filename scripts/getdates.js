@@ -1,4 +1,4 @@
-// Dynamically insert copyright year
+// insert copyright year
 document.getElementById('yearDate').textContent = new Date().getFullYear();
 
 // Display last modified date
