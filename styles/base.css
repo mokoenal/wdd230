@@ -49,7 +49,7 @@ nav ul {
     max-width: 800px;
     place-items: center;
     list-style-type: none;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0;
 
 }
