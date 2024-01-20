@@ -151,22 +151,6 @@ h2 {
 }
 
 
-.white-space .card {
-    text-align: center;
-}
-
-/* PARC: Repetition Example */
-.repetition .card {
-    background-color: #f9f9f9;
-}
-
-/* PARC: Alignment Example */
-.alignment .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
 
 @media (max-width: 600px) {
     nav {
