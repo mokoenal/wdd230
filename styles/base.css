@@ -124,10 +124,16 @@ h3 {
 
 footer {
     background-color: #2889a4;
-    color: #fff;
     text-align: center;
     padding: 15px;
     width: 100%;
+    font-size: 17px;
+}
+
+footer p {
+    color: white;
+    font-size: 17px;
+    margin: 10px;
 }
 
 @media (max-width: 600px) {
