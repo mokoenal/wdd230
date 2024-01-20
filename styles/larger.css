@@ -1,0 +1,42 @@
+@media only screen and (min-width: 800px) {
+    /* horizontal navigation bar */
+    nav #menu {
+        display: flex; /* display links side-by-side */
+        flex-direction: row; /* display links side-by-side */
+        justify-content: space-around; /* space out links */
+        padding: 5px; 
+        margin-bottom: 5px;
+    }
+    /* adjust padding and margin */
+    nav a {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    /* fix width of header, nav and footer */
+    header, nav, footer {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* add shadow box to sections */
+    .card-act, .card-info, .photovei {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    /* display main sections as two columns */
+    main {
+        display: flex; /* display sections side-by-side */
+        flex-direction: row; /* display sections side-by-side */
+        flex-wrap: wrap; /* wrap sections onto new lines */
+        justify-content: space-around; /* space out sections */
+    }
+    main h2, main hr {
+        width: 100%; /* make headings and horizontal rules span the width of the column */
+    }
+    .card-act {
+        width: 60%; 
+    }
+    .card-info {
+        width: 35%;
+    }
+}

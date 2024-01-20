@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap");
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 body {
@@ -11,9 +13,13 @@ body {
 header {
     font-family: "Cantarell", Arial, Helvetica, sans-serif;
     background-color: #2889a4;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
+    align-items: center;
 
 
 }
@@ -76,7 +82,9 @@ nav {
     color: black;
     text-align: center;
     padding: 10px;
+    width: 100%;
 }
+
 
 nav a {
     color: #170101;
@@ -123,17 +131,41 @@ h3 {
 }
 
 footer {
+
     background-color: #2889a4;
     text-align: center;
     padding: 15px;
     width: 100%;
     font-size: 17px;
+
 }
 
 footer p {
     color: white;
     font-size: 17px;
     margin: 10px;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+
+.white-space .card {
+    text-align: center;
+}
+
+/* PARC: Repetition Example */
+.repetition .card {
+    background-color: #f9f9f9;
+}
+
+/* PARC: Alignment Example */
+.alignment .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
