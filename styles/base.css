@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap");
 
+
+
 body {
     font-family: "Cantarell", Arial, Helvetica, sans-serif;
     color: #004e98;
@@ -11,8 +13,55 @@ header {
     background-color: #2889a4;
     text-align: center;
     padding: 20px;
+    width: 100%;
 
 }
+
+.card {
+    /* Set the background color for the entire card */
+    background-color: #2889a4;
+    border: #004e98;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.card2 {
+    /* Remove bullets from the unordered list */
+    list-style: none;
+    padding: 0;
+    /* Remove default padding */
+}
+
+.card2 li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.card2 li a {
+    text-decoration: underline;
+    color: #004e98;
+
+}
+
+.card h3 {
+    color: #fff;
+    background-color: #0077b6;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card p {
+    color: black;
+    /* Set text color for paragraphs within the card */
+}
+
+.card a {
+    color: #0077b6;
+    /* Set the color for the links */
+}
+
 
 img {
     border-radius: 10%;
@@ -75,7 +124,8 @@ footer {
     background-color: #2889a4;
     color: #fff;
     text-align: center;
-    padding: 30px;
+    padding: 15px;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
