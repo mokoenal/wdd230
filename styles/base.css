@@ -90,8 +90,12 @@ h2 {
     border-radius: 10px;
 }
 
+.card a {
+    color: #0077b6;
+    /* Set the color for the links */
+}
 
-.map {
+iframe {
     width: 100%;
     gap: 10px;
 }
@@ -100,9 +104,11 @@ footer {
     background-color: #2889a4;
     color: #fff;
     text-align: center;
-    padding: 30px;
+    padding: 17px;
     width: 100%;
 }
+
+
 
 @media (max-width: 600px) {
     nav {
@@ -119,6 +125,9 @@ footer {
         display: flex;
     }
 
+    /* responsive menu for smaller screens */
+    /* hamburger menu */
+
     #menu {
         display: block;
         font-size: 1.5rem;
@@ -130,10 +139,12 @@ footer {
         top: 0;
     }
 
+    /* open icon */
     #menu::before {
         content: "☰";
     }
 
+    /* close icon */
     #menu.open::before {
         content: "X";
     }
