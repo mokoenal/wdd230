@@ -17,83 +17,19 @@ figure {
 
 body {
     font-family: "Cantarell", Arial, Helvetica, sans-serif;
-    color: #004e98;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    color: #2889a4;
+    color: #333;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
     font-family: "Cantarell", Arial, Helvetica, sans-serif;
     background-color: #2889a4;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-}
-
-section {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    background-color: #fff;
-    /* White background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Light box shadow */
-}
-
-.card {
-    /* Set the background color for the entire card */
-    background-color: #2889a4;
-    border: #004e98;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 15px;
-
-}
-
-.card2 {
-    /* Remove bullets from the unordered list */
-    list-style: none;
-    padding: 0;
-    /* Remove default padding */
-}
-
-.card2 li {
-    margin-bottom: 10px;
-    color: #000000;
-}
-
-.card2 li a {
-    text-decoration: underline;
-    color: #004e98;
-
-}
-
-.card h3 {
     color: #fff;
-    background-color: #0077b6;
-    padding: 10px;
     text-align: center;
-    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
 }
-
-.card p {
-    color: black;
-    /* Set text color for paragraphs within the card */
-}
-
-.card a {
-    color: #0077b6;
-    /* Set the color for the links */
-}
-
 
 img {
     border-radius: 10%;
@@ -101,57 +37,42 @@ img {
     box-shadow: 0 0 10px black;
 }
 
-nav {
-    color: #fff;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
+#menu {
+    display: none;
 }
 
+nav {
+    font-family: "Cantarell", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #1d1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 
 nav a {
-    color: #170101;
+    color: #fff;
     text-decoration: none;
     margin: 0 10px;
 }
 
 nav a:hover {
     color: #000000;
-    background-color: #a52525c0;
+    background-color: #ed1983;
     text-decoration: none;
     margin: 0 10px;
 }
 
 main {
-    display: flex;
-    font-family: "Cantarell", Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     padding: 20px;
-    flex: 1;
-    margin: 20px;
-
-
 }
 
 h2 {
-    display: grid;
-    color: black;
+    color: #000000;
     grid-column: 1/3;
-}
-
-h1 {
-    color: white;
-    margin-top: 20px;
-
-}
-
-h3 {
-    color: #004e98;
-    background-color: #c0c0c0;
 }
 
 .card {
@@ -161,97 +82,68 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-
+.card h3 {
+    color: #fff;
     background-color: #2889a4;
+    padding: 10px;
     text-align: center;
-    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.map {
     width: 100%;
-    font-size: 17px;
-
-
+    gap: 10px;
 }
 
-footer p {
-    color: white;
-    font-size: 17px;
-    margin: 10px;
-}
-
-
-#menu {
-    font-size: 1.5rem;
-    padding: 3px 7px 6px;
-    border: 1px solid rgba(0, 0, 0, .3);
-    background-color: #eee;
-    color: #000;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-
-#menu::before {
-    content: "☰";
-}
-
-
-#menu.open::before {
-    content: "✖";
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    background-color: #EBECEB;
-}
-
-
-nav a {
-    display: none;
-    padding: 1rem;
+footer {
+    background-color: #2889a4;
+    color: #fff;
     text-align: center;
-    text-decoration: none;
-}
-
-
-nav a:hover {
-    background-color: #bbb;
-    color: #333;
-    font-weight: 700;
-}
-
-/* show navigation menu when hamburger menu is clicked */
-.open a {
-    display: block;
-}
-
-/* display icon around the open menu item using CSS pseudo-elements */
-.active::before {
-    content: "| ";
-    /* padding-right: 1rem; */
-}
-
-.active::after {
-    content: " |";
-    /* padding-left: 1rem; */
-}
-
-/* map iframe */
-iframe {
+    padding: 30px;
     width: 100%;
-    padding-bottom: 20px;
 }
 
-/* Media queries for responsive design */
-@media screen and (max-width: 600px) {
-    main {
+@media (max-width: 600px) {
+    nav {
+        display: none;
         flex-direction: column;
     }
 
-    header,
-    footer {
-        text-align: left;
+    nav a {
+        display: none;
+        margin: 5px 0;
     }
+
+    nav.open {
+        display: flex;
+    }
+
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 0.5px solid white;
+        padding: 0.25rem 0.75rem;
+        background-color: black;
+        color: white;
+        position: absolute;
+        top: 0;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
+    }
+
+    .open a {
+        display: block;
+    }
+
+    main {
+        display: block;
+    }
+
 }
