@@ -1,5 +1,5 @@
-// get the current year and insert it into the footer
-document.querySelector('#yearDate').textContent = new Date().getFullYear();
+// insert copyright year
+document.getElementById('yearDate').textContent = new Date().getFullYear();
 
-// get the last modified date and insert it into the footer
-document.querySelector('#lastModified').textContent = document.lastModified;
+// Display last modified date
+document.getElementById('lastModified').textContent = document.lastModified;
