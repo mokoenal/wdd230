@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boksburg Chamber of Commerce</title>
+    <meta name="author" content="Lindiwe Mokoena">
+    <meta name="description" content="Boksburg Chamber of Commerce
+        - Home Page
+        - WDD230 Web Frontend Development Project">
+    <!--fav icon link-->
+    <link rel="icon" href="images/favicon (8).ico">
+    <!-- meta tags for social media use -->
+    <meta property="og:title" content="Boksburg Chamber of Commerce">
+    <meta property="og:type" content="Website">
+    <meta property="og:description" content="This is the home page for the Chamber project.">
+    <meta property="og:image" content="https://live.staticflickr.com/596/32360030171_f80c976cb5_o.jpg">
+    <meta property="og:url" content="https://mokoenal.github.io/wdd230/">
+    <meta property="og:site_name" content="Boksburg Chamber of Commerce">
+
+    <!--styles sheet-->
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!--link to font for this page-->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <h1>Boksburg Chamber of Commerce</h1>
+    </header>
+    <button id="menu"> </button>
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+
+    </nav>
+    <div class="hero-box">
+        <img id="hero-img" src="images/hero-image.png" alt="hero image">
+        <button class="call-to-action">Join Now!</button>
+    </div>
+    <main>
+        <section class="events">
+            <h3>Events</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            </p>
+        </section>
+        <section class="weather">
+            <h3>Weather</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            </p>
+
+        </section>
+        <section class="companies">
+            <h3>Companies</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            </p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="yearDate"></span> | Lindiwe Mokoena | South Africa</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+</body>
+
+</html>
