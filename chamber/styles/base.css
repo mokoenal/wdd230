@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&family=Rock+Salt&display=swap");
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: Raleway, Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +14,10 @@ header {
     color: #FEFEFE;
 }
 
+.button-box {
+    text-align: center;
+    border-radius: 5px;
+}
 
 .logo {
     width: 100px;
@@ -22,7 +26,7 @@ header {
 }
 
 h1 {
-    font-family: "Cantarell", Arial, Helvetica, sans-serif;
+    font-family: "Rock Salt", "Fredoka One", sans-serif;
     justify-content: center;
     margin: 0;
     flex-grow: 1;
@@ -81,7 +85,7 @@ nav a:hover {
     color: #fff;
     text-shadow: 2px 2px 4px rgba(117, 27, 27, 0.5);
     color: rgb(82, 6, 6);
-  }
+}
 
 .call-to-action {
     position: absolute;
