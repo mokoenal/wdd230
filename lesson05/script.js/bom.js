@@ -1,9 +1,9 @@
-// create elements to link to the document
+// elements to link to the document
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-// create an event listener for the button
+//event listener for the button
 button.addEventListener('click', () => {
 
     // check if the input value is not empty
@@ -13,8 +13,7 @@ button.addEventListener('click', () => {
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
 
-        // add the input value to the list item and the delete 
-        // button to the list item
+        // add the input value to the list item and the delete // button to the list item
         li.textContent = input.value;
         deleteButton.textContent = '❌';
         li.appendChild(deleteButton);
