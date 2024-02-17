@@ -32,7 +32,7 @@
 
 <body>
     <header>
-        <img class="logo" src="images/logo.png" alt="logo">
+        <img class="logo" src="images/logo.webp" alt="logo">
         <h1>Boksburg Chamber of Commerce</h1>
         <div id="mode">
             🕶️
@@ -47,13 +47,21 @@
 
     </nav>
     <div class="hero-box">
-        <img id="hero-img" src="images/hero_image3.jpg" alt="hero image">
+        <!-- <img id="hero-img" src="images/hero_image3.jpg" alt="hero image">
+       --> <!-- original hero image -->
+
+        <picture> <!-- temporary hero image -->
+            <source srcset="images/hero-small.webp" media="(max-width: 343px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 800px)">
+            <img id="hero-img" src="images/hero-large.webp" alt="hero image" width="1280" height="853">
+        </picture>
+
         <button class="call-to-action">Join Us</button>
     </div>
     <main>
         <section class="events">
             <h3>Events</h3>
-            <img class="event" src="images/event1.jpg" alt="events">
+            <img class="event" src="images/event1.webp" alt="events">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -62,18 +70,17 @@
         </section>
         <section class="weather">
             <h3>Weather</h3>
-            <img class="weather" src="images/weather1.jpg" alt="events">
+            <img class="weather" src="images/weather1.webp" alt="events">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                <span id="temperature">25</span> °F
+                <span id="wind-speed">5.0</span> mph
             </p>
 
         </section>
         <section class="companies1">
             <h2>Member Sportlights</h2>
             <h3>Need Repairs</h3>
-            <img class="repair" src="images/tools.jpg" alt="repair">
+            <img class="repair" src="images/tools.webp" alt="repair">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -83,7 +90,7 @@
         </section>
         <section class="companies2">
             <h3>Need Transport</h3>
-            <img class="transport" src="images/transport.webp" alt="trasnport">
+            <img class="transport" src="images/transport1.webp" alt="trasnport">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -93,7 +100,7 @@
         </section>
         <section class="companies3">
             <h3>Love Art</h3>
-            <img class="art" src="images/artlove.jpg" alt="art">
+            <img class="art" src="images/artlove.webp" alt="art">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -103,7 +110,7 @@
 
     </main>
     <footer>
-        <img class="footer-logo" src="images/logo.png" alt="logo-footer">
+        <img class="footer-logo" src="images/logo.webp" alt="logo-footer">
         <div class="info-footer">
             <p>Boksburg Chamber of Commerce</p>
             <p>5 Bulter street, Boksburg 1459, South Africa</p>
@@ -123,6 +130,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js" type="module"></script>
 </body>
 
 </html>

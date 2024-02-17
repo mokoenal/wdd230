@@ -11,6 +11,7 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: #FEFEFE;
     color: #000000;
+    margin: 0;
 
 }
 
@@ -90,13 +91,13 @@ nav a:hover {
     width: 100%;
     align-items: center;
     justify-content: center;
+
 }
 
 #hero-img {
     width: 100%;
-    margin: 0;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
 
 }
 
