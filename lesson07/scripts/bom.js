@@ -10,13 +10,13 @@ let chaptersArray = getChapterList() || [];
 button.addEventListener('click', () => {
 
     // check if the input value is not empty
-    if (input.value != '') {//make sure input is not empty
+    if (input.value != '') { //make sure input is not empty
 
-        displayList(input.value);//call the funtion that outputs the submitted chapter
-        chaptersArray.push(input.value);//add the chapter to the array
-        setChapterList();//update the localStorage with the new array
-        input.value = '';//clear the input
-        input.focus();//set the focus back to the input
+        displayList(input.value); //call the funtion that outputs the submitted chapter
+        chaptersArray.push(input.value); //add the chapter to the array
+        setChapterList(); //update the localStorage with the new array
+        input.value = ''; //clear the input
+        input.focus(); //set the focus back to the input
     }
 });
 
@@ -53,14 +53,13 @@ function displayList(chapter) {
     let li = document.createElement('li');
     let deleteButton = document.createElement('button');
 
-    // add the input value to the list item and the delete 
-    // button to the list item
+
     li.textContent = chapter;
     deleteButton.textContent = '❌';
     deleteButton.classList.add('delete');
     li.append(deleteButton);
     list.append(li);
-    // input.value = ''; // clear the input value (for convenience)
+
 
     // add an event listener for the delete button
     deleteButton.addEventListener('click', () => {
