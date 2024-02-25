@@ -1,25 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discovery</title>
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/lastvisit.js"></script>
 </head>
-
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="col1">One</div>
-            <div class="col2">Two</div>
-            <div class="col3">Three</div>
-            <div class="col4">Four</div>
-            <div class="col5">Five</div>
-        </div>
-        .wrapper {
-            display: grid;
-            grid-template-columns: 1fr 2fr 1fr 1fr;
-        }
-        <header </body>
 
+    <header>
+        <div id="header-content">
+            <div id="logo-section">
+                <img src="images/logo.png" alt="logo" id="header-logo">
+                <section id="name-section">
+                    <h1>Quilmes</h1>
+                    <h2>Chamber of Commerce</h2>
+                </section>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-item"><a id="menu" href="#"></a></li>
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./discovery.html">Discover</a></li>
+                    <li class="nav-item"><a href="./directory.html">Directory</a></li>
+                    <li class="nav-item"><a href="./join.html">Join</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="social-div">
+                <img src="images/facebook.png" alt="facebook" class="social">
+                <img src="images/linkedin.png" alt="linkedin" class="social">
+            </div>
+            <div id="date-section">
+                <p>Generic date</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="discovery-main">
+
+        <section id="discovery-info">
+            <h2>Quilmes City</h2>
+            
+            <p>The Quilmes were a native tribe who lived in the surroundings of Tucumán. In the 17th century, after repeated attempts by the Spanish invaders to control their lands, the Quilmes were defeated and were forced to settle in a restricted colony (reducción) near Buenos Aires, where the authorities could control them. The settlement was thus established in 1666 as Exaltación de la Santa Cruz de los Kilme. The 1,000 km (621 mi) journey from Tucumán was made on foot, causing hundreds of Quilmes to die in the process. The colony had been abandoned by 1810 and had become a ghost town. The land was divided in parcels and the town of Quilmes was established in 1818. During the first British invasion, lasting 46 days in 1806, the British arrived from Montevideo through Quilmes and went to Buenos Aires from there.</p>
+        
+            <p>The town's development accelerated during the wave of immigration in Argentina during the late 19th century, and Quilmes was considered as the location for a new provincial capital during the Federalization of Buenos Aires of 1880 (ultimately established in La Plata). The Argentine Air Force established a 220 ha (540 acre) base in East Quilmes in 1943. In 1944, Impa (Industria Metallurgica y Plastica Argentina) opened Argentina's first airplane plant at Quilmes. Impa had been blacklisted by the United States government due to its connections to Nazi-occupied Austria and fascist figures within Argentina itself. The airplanes were considered of "antiquated design" according to the New York Times.</p>
+        
+            <p>Quilmes proper consists of two main parts, east and west, which are divided by the tracks of the Metropolitano passenger train line. East Quilmes has several relatively wealthy areas and a large shopping district. As one travels east toward the Río de la Plata, neighborhoods become increasingly poor, and two large villas miseria (slums) are found close to the river. These areas often experience severe flooding.</p>
+        </section>
+
+        <div id="discovery-pics">
+
+            <section class="discovery-pic">
+                <picture>
+                    <img src="images/placeholder.png" alt="catedral" data-src="images/catedral.jpg">
+                </picture>
+                <h3><em>Catedral</em></h3>
+            </section>
+
+            <section class="discovery-pic">
+                <picture>
+                    <img src="images/placeholder.png" alt="cerveceria" data-src="images/cerveceria.jpg">
+                </picture>  
+                <h3><em>Cerveceria</em></h3>
+            </section>
+
+            <section class="discovery-pic">
+                <picture>
+                    <img src="images/placeholder.png" alt="club" data-src="images/club.jpg">
+                </picture>  
+                <h3><em>Club</em></h3>
+            </section>
+
+            <section class="discovery-pic">
+                <picture>
+                    <img src="images/placeholder.png" alt="costanera sur" data-src="images/costanera-sur.jpg">
+                </picture>  
+                <h3><em>Costanera Sur</em></h3>
+            </section>
+
+            <section class="discovery-pic">
+                <picture>
+                    <img src="images/placeholder.png" alt="museo del transporte" data-src="images/museo-del-transporte.jpg">
+                </picture>  
+                <h3><em>Museo del Transporte</em></h3>
+            </section>
+
+            <section class="discovery-pic">
+                <picture>
+                    <img src="images/placeholder.png" alt="plaza san martin" data-src="images/plaza-san-martin.jpg">
+                </picture>  
+                <h3><em>Plaza San Martin</em></h3>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="footer-content">
+
+            <div id="footer-top-content">
+                <img src="images/logo.png" alt="logo" id="footer-logo">
+                <h4>Quilmes Chamber of Commerce</h4>
+                <p>1697 Colon</p>
+                <p>Quilmes, Buenos Aires</p>
+                <p>info@quilmescc.org</p>
+                <p>+(54) 11 4442-9980</p>
+                <p>📍 Location Map</p>
+            </div>
+
+            <hr>
+
+            <div id="footer-bottom-content">
+                <div id="info">
+                    <p>© Quilmes Chamber</p>
+                    <p><strong>Fabrizio Carlassara</strong></p>
+                    <p>WDD 230 Project</p>
+                </div>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
 </html>
