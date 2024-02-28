@@ -4,15 +4,15 @@ body {
 
 table {
     margin: 10px auto;
-    border: thin solid lightgray;
-    box-shadow: 0 0 10px gray;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
     border-collapse: collapse;
 }
 
 caption {
     padding: 10px;
     caption-side: bottom;
-    color: black;
+    color: var(--back);
     font-size: .85rem;
 }
 
@@ -23,7 +23,7 @@ thead tr th {
 }
 
 .heading {
-    background-color: #000070;
+    background-color: #313137c8;
     color: white;
 }
 
