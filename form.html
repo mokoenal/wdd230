@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Register Form</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="favicon.ico">
+
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img class="myself" src="images/new%20image.webp" alt="profile picture">
+        <h1>Lindiwe Mokoena</h1>
+    </header>
+    <button id="menu"> </button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng"
+            target="_blank">Scripture</a>
+        <a href="form.html">Register</a>
+    </nav>
+    <main>
+        <h2>Registration Form</h2>
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Information</legend>
+
+                <label>Username*<input type="text" id="uname" name="userName" required></label>
+
+                <label class="top">Password* <input type="password" id="password" name="password"
+                        pattern="[A-Za-z0-9].{8,}" placeholder="At least 8 alpha-numeric characters long."
+                        required></label>
+
+                <label>Confirm Password* <input type="password" id="password2" name="password2" required></label>
+                <label>Email*<input type="email" id="email" name="email" placeholder="someone@byui.edu"
+                        title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+
+                <label for="r">Page Raiting</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+                <input type="submit" value="Register" class="button">
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="yearDate"></span> | Lindiwe Mokoena | South Africa</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/form.js"></script>
+
+
+</html>
