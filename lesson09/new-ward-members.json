@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+        "familyName": "Mokoena",
+        "moveInDate": "2021-11-01",
+        "numberOfPeople": "5",
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Lindiwe Mokoena",
+                "gender": "Female",
+                "birthdate": "1986-09-11"
+            },
+            {
+                "name": "Lehlohonolo Mokoena",
+                "gender": "Male",
+                "birthdate": "1984-02-14"
+            },
+            {
+                "name": "Otumiseng Mokoena",
+                "gender": "Female",
+                "birthdate": "2010-05-05"
+            },
+            {
+                "name": "Keorapetse Mokoena",
+                "gender": "Male",
+                "birthdate": "2012-07-21"
+            },
+            {
+                "name": "Gosiame Mokoena",
+                "gender": "Male",
+                "birthdate": "2016-08-07"
+            }
+        ]
+    }
+}
