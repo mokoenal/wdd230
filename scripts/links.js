@@ -15,19 +15,18 @@ const getLinks = async () => {
 
 const displayLinks = (weeks) => {
     weeks.lessons.forEach((lesson) => {
-        // create a new div for each week
+      
         let weekTitle = document.createElement('h4');
         weekTitle.textContent = `Week ${lesson.lesson}`;
         links.appendChild(weekTitle);
 
-        // create a new div for each activity
         lesson.links.forEach((link, index) => {
             let linkURL = document.createElement('a');
             linkURL.textContent = link.title;
             linkURL.href = link.url;
             links.appendChild(linkURL);
 
-            // add a separator between links if it's not the last one
+        
             if (index < lesson.links.length - 1) {
                 let separator = document.createTextNode(" | ");
                 links.appendChild(separator);
