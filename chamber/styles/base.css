@@ -496,6 +496,7 @@ li {
     border-radius: 8px;
 }
 
+
 /* List view */
 
 #member-cards.list section {
@@ -526,6 +527,7 @@ li {
 #member-cards.list a:hover {
     text-decoration: underline;
 }
+
 
 @media (max-width: 600px) {
 
