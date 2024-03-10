@@ -1,10 +1,10 @@
 {
-    "member": [
+    "members": [
         {
             "name": "Papachinos",
             "address": "261 Kingfisher Ave, Boksburg, 1459",
             "phone": "+27 913 2505",
-            "weburl": "https://www.papachinos.co.za/",
+            "weburl": "https://www.papachinos.co.za/pappinos.webp",
             "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/pappinos.webp",
             "membershiplevel": "Gold"
         },
@@ -14,7 +14,7 @@
             "phone": " +27 (0)11 309 4700",
             "weburl": "https://www.apartheidmuseum.org/",
             "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/Museumnew.webp",
-             "membershiplevel": "Silver"
+            "membershiplevel": "Silver"
         },
         {
             "name": "Virgin Active",
@@ -54,7 +54,7 @@
             "phone": "+27 894 4040",
             "weburl": "https://pumatransport.co.za/",
             "image": "https://raw.githubusercontent.com/mokoenal/wdd230/master/chamber/images/Puma-New.webp",
-             "membershiplevel": "Gold"
+            "membershiplevel": "Gold"
         }
     ]
 }

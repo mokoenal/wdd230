@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boksburg Chamber of Commerce</title>
+    <title>Directory</title>
     <meta name="author" content="Lindiwe Mokoena">
     <meta name="description" content="This is the Directory page">
     <!--fav icon link-->
     <link rel="icon" href="images/favicon-32x32.png">
     <!-- meta tags for social media use -->
-    <meta property="og:title" content="Discover page">
+    <meta property="og:title" content="Directory page">
     <meta property="og:type" content="Website">
     <meta property="og:description" content="This is the Directory page">
-    <meta property="og:image" content="https://raw.githubusercontent.com/mokoenal/wdd230/main/images/Boksburg.jpg">
+    <meta property="og:image" content="https://raw.githubusercontent.com/mokoenal/wdd230/master/images/Boksburg.jpg">
     <meta property="og:url" content="https://mokoenal.github.io/wdd230/">
     <meta property="og:site_name" content="Boksburg Chamber of Commerce">
 
@@ -37,21 +37,21 @@
         </div>
     </header>
     <button id="menu"> </button>
+    
     <nav class="navigation">
         <a href="index.html">Home</a>
-        <a href="">Discover</a>
+        <a href="discover.html">Discover</a>
         <a href="">Directory</a>
         <a href="join.html">Join</a>
     </nav>
-    <h2 class="page-title">Discover Boksburg</h2>
 
-    <main>
-        <div class="toggle"
-         <button id="grid">⏹️Grid</button>
-        <button id="list">📄List</button>
+    <main class="directory-main">
+        <div class="toggle">
+
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
         </div>
         <div id="member-cards" class="grid"></div>
-
     </main>
 
     <footer>
@@ -76,9 +76,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/getlastvisit.js"></script>
-    <script src="directory.js"></script>
-    <script src="toggleview.js"></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/toggleview.js" defer></script>
 </body>
 
 </html>

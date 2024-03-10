@@ -1,4 +1,4 @@
-const url = "https://elrodfe.github.io/wdd230/chamber/data/members.json";
+const url = "https://mokoenal.github.io/wdd230/chamber/data/members.json";
 const div = document.querySelector("#member-cards");
 
 async function getMembersInfo(url) {

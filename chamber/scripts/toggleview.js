@@ -9,6 +9,7 @@ gridbutton.addEventListener("click", () => {
 
 listbutton.addEventListener("click", showList);
 
+// Function declaration
 function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
