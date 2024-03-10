@@ -22,8 +22,8 @@ function displayinfo(members) {
         img.setAttribute("src", `${member.image}`);
         img.setAttribute("alt", `${member.name} logo`);
         img.setAttribute("loading", "lazy");
-        img.setAttribute("width", "600");
-        img.setAttribute("height", "600");
+        img.setAttribute("width", "400");
+        img.setAttribute("height", "400");
 
         weburl.setAttribute("href", `${member.weburl}`);
         weburl.setAttribute("target", "_blank");
